@@ -1,0 +1,23 @@
+.with-the-bride, .with-the-groom {
+  margin: 0 auto;
+  padding-top: 1rem;
+}
+
+.slider-item {
+  margin-top: .5rem;
+  img {
+    border-radius: 5rem;
+    margin-bottom: .5rem;
+  }
+}
+
+.slider-name {
+  font-size: 1.2rem;
+  color: $white;
+  margin: 0;
+}
+
+.slider-role {
+  font-size: 1rem;
+  color: rgba(255,255,255,.5);
+}

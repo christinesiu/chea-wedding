@@ -1,0 +1,17 @@
+.wedding-information {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.wedding-information-item {
+  margin-bottom: $global-margin;
+
+  img {
+    margin: .5rem 0;
+  }
+
+  p {
+    margin: 0;
+  }
+}

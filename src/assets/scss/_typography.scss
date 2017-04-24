@@ -1,0 +1,81 @@
+h1, h2 {
+  font-family: 'thesecret';
+}
+
+h2 {
+  letter-spacing: .5px;
+}
+
+h5 {
+  color: $secondary-color;
+}
+
+body {
+  font-size: 14px;
+}
+
+.hero-header {
+  color: $white;
+  text-shadow: 0 2px 6px rgba(0,0,0,.2);
+  margin: 3rem 0 0 0;
+}
+
+.small-header, .subheader, .slider-name, .slider-role {
+  font-family: 'Averia Serif Libre', Georgia, serif;
+}
+
+.small-header {
+  color: $white;
+  text-shadow: 0 2px 6px rgba(0,0,0,.2);
+  text-transform: uppercase;
+  margin-top: -1rem;
+  font-size: 1.5rem;
+
+  @include breakpoint(large down) {
+    font-size: 1.2rem;
+  }
+
+  @include breakpoint(small only) {
+    font-size: 1rem;
+    margin-top: -.5rem;
+  }
+}
+
+.subheader {
+  color: $white;
+  font-size: 1rem;
+  text-shadow: 0 2px 6px rgba(0,0,0,.2);
+  margin: 0;
+
+  &.lightblue {
+    color: #C5E5D9;
+  }
+}
+
+.section-header {
+  text-align: center;
+
+  &.white {
+    color: $white;
+  }
+
+  &.blue {
+    color: $primary-color;
+  }
+}
+
+hr {
+    display:block;
+    border:0px;
+    height:15px;
+    margin-top: 0;
+
+    &.hr-white {
+      background: url('../img/break-image-white.svg') no-repeat center;
+      opacity: .7;
+    }
+
+    &.hr-blue {
+      background:url('../img/break-image.svg') no-repeat center;
+    }
+}

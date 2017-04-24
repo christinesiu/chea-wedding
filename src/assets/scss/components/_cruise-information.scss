@@ -1,0 +1,22 @@
+.cruise-information {
+  box-shadow: 0 2px 30px rgba($black, 0.3);
+  color: white;
+
+  a {
+    color: $white;
+    font-weight: bold;
+    border-bottom: 1px dotted $white;
+    transition: .5s all;
+
+    &:hover {
+      color: $tertiary-color;
+      border-color: $tertiary-color;
+    }
+  }
+
+  .section-header {
+    .subheader {
+      margin: -.5rem 0 .5rem;;
+    }
+  }
+}

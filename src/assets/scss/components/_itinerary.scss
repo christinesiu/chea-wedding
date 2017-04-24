@@ -1,0 +1,23 @@
+.itinerary-item {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1rem;
+
+  .left, .right {
+    border: 1px solid $light-gray;
+    padding: 1rem;
+    text-align: left;
+    background-color: $white;
+
+    p {
+      margin-bottom: 0;
+    }
+  }
+
+  .left {
+    border-right: 0;
+  }
+
+  .right {
+  }
+}
