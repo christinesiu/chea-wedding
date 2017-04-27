@@ -1,0 +1,17 @@
+.instruction-block {
+  display: flex;
+  margin: 2rem 0;
+}
+
+.instruction-info {
+  margin: .5rem 1rem;
+
+  @include breakpoint(small only) {
+    margin-top: .1rem;
+  }
+
+  ul {
+    list-style: none;
+    margin-left: 0;
+  }
+}
