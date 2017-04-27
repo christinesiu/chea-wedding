@@ -8,7 +8,7 @@
   <title>Sail Away with the Cheas</title>
   <link rel="stylesheet" href="assets/css/app.css">
   <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css"/>
-  <link href="https://fonts.googleapis.com/css?family=Averia+Serif+Libre|Petit+Formal+Script|Pinyon+Script|Source+Sans+Pro" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Averia+Serif+Libre|Source+Sans+Pro|Enriqueta" rel="stylesheet">
 </head>
 <body>
   <div class="off-canvas-wrapper">
@@ -34,7 +34,7 @@
       <div class="row expanded collapse">
         <div class="column">
           <!-- hero -->
-          <div class="hero">
+          <div class="navbar-container">
             <div class="row hide-for-small-only">
               <div class="column">
                 <ul class="dropdown menu navbar flex-container align-spaced" data-dropdown-menu>
@@ -62,13 +62,18 @@
                 </ul>
               </div>
             </div>
-            
-            <button type="button" class="button show-for-small-only" data-toggle="offCanvas">Open Menu</button>
-            
-            <h1 class="hero-header">Sail Away</h1>
-            <h2 class="small-header">with the Cheas</h2>
-            <h3 class="subheader">March 22 to 26, 2018</h3>
-            <h3 class="subheader">Aboard the Ruby Princess</h3>
+          
+          </div>
+          
+          <button type="button" class="button show-for-small-only navbar-mobile" data-toggle="offCanvas">Open Menu</button>
+          
+          <div class="hero flex-container flex-dir-column align-center">
+            <div class="hero-header-container">
+              <h1 class="hero-header">Sail Away</h1>
+              <h2 class="small-header">with the Cheas</h2>
+              <h3 class="subheader">March 22 to 26, 2018</h3>
+              <h3 class="subheader">Aboard the Ruby Princess</h3>
+            </div>
           </div>
           <!-- hero end -->
       
@@ -151,7 +156,7 @@
       
             <p>The Bride and Groom kindly request that all guests make their room reservation and <strong><a href="">RSVP</a> before November 2017</strong>, as the total number of guests are needed to complete the planning. In addition, due to budget restrictions, the Bride and Groom can only accommodate the individuals listed in the Save the Date and formal Wedding Invitation. Thank you so much for your understanding.</p>
       
-            <p><em>For more details, please go to the Princess Cruise website or call our Cruise Vacation Planner, <a href="#contact-section">Jordan Walker</a>.</em></p>
+            <p class="lead" style="color: #C5E5D9;">For more details, please go to the Princess Cruise website or call our Cruise Vacation Planner, <a href="#contact-section">Jordan Walker</a>.</p>
           </div>
       
           <div class="row collapse expanded" data-equalizer data-equalize-on="medium">
@@ -215,8 +220,6 @@
                     <p>4PM - Departure</p>
                   </div>
                 </div>
-              
-                <p><em>More general information regarding the cruise (ie. parking, embarkation, disembarkation, etc.) will be added to this page closer to the cruise.</em></p>
               </div>
               
             </div>
@@ -238,7 +241,7 @@
                     <h5>3:30 PM</h5>
                   </div>
                 </div>
-                <p><em>More information regarding the Wedding Ceremony and its associated events will be posted closer to the cruise. </em></p>
+                <p class="lead">More information regarding the Wedding Ceremony and its associated events will be posted closer to the cruise.</p>
               </div>
               
             </div>
@@ -254,7 +257,7 @@
       
             <div class="row">
               <div class="small-12 columns text-center">
-                <p>To make a reservation, please call our Vacation Cruise Planner, Jordan Walker, with the details listed below. <strong>Please make your room reservation and RSVP before October 2017.</strong></p>
+                <p class="lead">To make a reservation, please call our Vacation Cruise Planner, Jordan Walker, with the details listed below. <strong>Please make your room reservation and RSVP before October 2017.</strong></p>
               </div>
               <div class="small-12 medium-6 columns">
                 <div class="instruction-block">
@@ -321,19 +324,17 @@
             </div>
           </div>
       
-          <hr>
-      
           <!-- useful-info -->
           <div class="useful-info">
-            <div class="flex-container">
-              <img src="http://placehold.it/30x30" alt="">
+            <div class="section-header">
+              <img src="assets/img/info.png" alt="">
               <h4>Useful Information</h4>
             </div>
-            <div class="row">
-              <div class="small-12 medium-5 columns callout">
+            <div class="row useful-info-item-container">
+              <div class="small-12 medium-6 column useful-info-item">
                 People that use our Group Reservation will receive onboard credit.  The more people we get under our Group, the more onboard credit everyone will receive.  We will not know how much onboard credit everyone will receive until two weeks before the cruise departs, but at minimum, everyone will receive $25/person.
               </div>
-              <div class="small-12 medium-5 columns callout ml-1">
+              <div class="small-12 medium-6 column useful-info-item">
                 If at any time the cruise goes on sale, anyone who has reserved under our Group will receive the adjusted price.  If you have already put a deposit down, your total to be paid will be lowered.  If you have already paid the full amount, you will receive a refund.
               </div>
             </div>

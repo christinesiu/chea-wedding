@@ -2,9 +2,14 @@
   background: $primary-color url('../img/hero-bg.png') no-repeat top center;
   background-size: cover;
   width: 100%;
-  height: 435px;
+  height: 100vh;
   text-align: center;
   padding: .5rem;
+  margin-top: -2.5rem;
+
+  @include breakpoint(small only) {
+    margin-top: -3.5rem;
+  }
 }
 
 .section-container {
@@ -31,8 +36,8 @@
 }
 
 .itinerary, .wedding-information {
-  margin-top: -4.5rem;
-  padding: 6rem 3rem 3rem;
+  margin-top: -9.5rem;
+  padding: 13rem 3rem 3rem;
   position: relative;
   z-index: -1;
   text-align: center;

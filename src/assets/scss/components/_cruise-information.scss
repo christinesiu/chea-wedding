@@ -3,14 +3,12 @@
   color: $white;
 
   a {
-    color: $white;
-    font-weight: bold;
-    border-bottom: 1px dotted $white;
-    transition: .5s all;
+    color: $tertiary-color;
+    border-bottom: 1px dotted $tertiary-color;
 
     &:hover {
-      color: $tertiary-color;
-      border-color: $tertiary-color;
+      color: $white;
+      border-color: $white;
     }
   }
 

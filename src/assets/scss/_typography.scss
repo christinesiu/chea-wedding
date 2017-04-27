@@ -11,10 +11,14 @@ h5 {
   color: $secondary-color;
 }
 
+body {
+  font-weight: light;
+}
+
 .hero-header {
   color: $white;
   text-shadow: 0 2px 6px rgba(0,0,0,.2);
-  margin: 13rem 0 0 0;
+  margin: 6rem 0 0 0;
 }
 
 .small-header, .subheader, .slider-name, .slider-role {
@@ -75,4 +79,25 @@ hr {
     &.hr-blue {
       background:url('../img/break-image.svg') no-repeat center;
     }
+}
+
+.lead {
+  font-family: 'source sans pro', sans-serif;
+  color: $dark-gray;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 14px;
+  letter-spacing: 1px;
+  padding: 2rem 2rem 0 2rem;
+}
+
+a {
+  font-weight: bold;
+  border-bottom: 1px dotted $primary-color;
+  transition: .5s all;
+
+  &:hover {
+    color: $tertiary-color;
+    border-color: $tertiary-color;
+  }
 }
