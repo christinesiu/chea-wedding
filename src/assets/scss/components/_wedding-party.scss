@@ -8,9 +8,10 @@
     color: $tertiary-color;
   }
   .decorative-text {
-    font-family: 'thesecret';
+    font-family: 'TheSecret';
     font-size: 2rem;
-    margin-left: .5rem;
+    margin: 2.5rem 0 0 .5rem;
     color: $white;
+    line-height: 0;
   }
 }

@@ -53,14 +53,15 @@
   background: url('../img/leaf-bg.jpg') no-repeat center;
   background-size: cover;
   height: 550px;
-  margin-top: -5rem;
+  margin-top: -8rem;
 }
 
 .rsvp {
   background-color: $white;
+  box-shadow: 0 2px 35px rgba($black, 0.15);
 }
 
 .contact {
   background-color: $secondary-color;
-  margin-top: 6rem;
+  margin-top: 7rem;
 }
