@@ -69,3 +69,19 @@
 .p-2 {
   padding: 2rem;
 }
+
+.border-left {
+  border-left: 1px dashed $light-gray;
+}
+
+.border-right {
+  border-right: 1px dashed $light-gray;
+}
+
+.border-bottom {
+  border-bottom: 1px dashed $light-gray;
+}
+
+.border-top {
+  border-top: 1px dashed $light-gray;
+}

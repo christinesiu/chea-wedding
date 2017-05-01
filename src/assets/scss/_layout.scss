@@ -36,22 +36,18 @@
 }
 
 .itinerary, .wedding-information {
-  margin-top: -9.5rem;
+  margin-top: -11rem;
   padding: 13rem 3rem 3rem;
   position: relative;
   z-index: -1;
   text-align: center;
   height: auto;
+  border-bottom: 1px dashed $light-gray;
 
   @include breakpoint(small only) {
     padding: 1rem;
     margin-top: 0;
   }
-}
-
-.itinerary {
-  background: $primary-color url('../img/vines-bg.png') no-repeat top center;
-  background-size: cover;
 }
 
 .rsvp-container {
@@ -67,6 +63,6 @@
 }
 
 .contact {
-  background-color: $secondary-color;
+  background-color: rgba($secondary-color, .2);
   margin-top: 7rem;
 }

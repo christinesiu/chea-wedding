@@ -1,3 +1,9 @@
+.itinerary {
+  background: $primary-color url('../img/vines-bg.png') no-repeat top center;
+  background-size: cover;
+  // background-color: rgba($secondary-color, .2);
+}
+
 .itinerary-item {
   display: flex;
   justify-content: center;
