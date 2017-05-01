@@ -36,5 +36,9 @@
     background-color: $primary-color;
     color: $white;
     box-shadow: 0 2px 20px rgba(0, 0, 0, .2);
+    
+    @include breakpoint(small only) {
+      margin: .5rem 0;
+    }
   }
 }
