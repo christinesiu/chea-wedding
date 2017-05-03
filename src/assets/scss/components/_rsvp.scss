@@ -3,6 +3,10 @@
   background-size: cover;
   height: 550px;
   margin-top: -8rem;
+
+  @include breakpoint(small only){
+    margin-top: -10rem;
+  }
 }
 
 .rsvp {

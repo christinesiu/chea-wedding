@@ -12,7 +12,11 @@ h5 {
 }
 
 body {
-
+  @include breakpoint(small only){
+    p, li, .useful-info-item {
+      font-size: 14px;
+    }
+  }
 }
 
 .hero-header {

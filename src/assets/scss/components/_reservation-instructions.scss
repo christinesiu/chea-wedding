@@ -4,11 +4,33 @@
 
 .instruction-block {
   display: flex;
-  margin: 2rem 0;
+  margin: 2rem 1rem;
+
+  @include breakpoint(small only){
+    margin: 2rem 0;
+  }
+}
+
+.step-1, .step-3 {
+  border-right: 1px dashed $light-gray;
+
+  @include breakpoint(small only){
+    border: 0;
+  }
+}
+
+.step-2 {
+  @include breakpoint(small only){
+    border-top: 1px dashed $light-gray;
+  }
+}
+
+.step-3, .step-4 {
+  border-top: 1px dashed $light-gray;
 }
 
 .instruction-info {
-  margin: .5rem 1rem;
+  margin: .5rem 1rem 0 1rem;
 
   @include breakpoint(small only) {
     margin-top: .1rem;

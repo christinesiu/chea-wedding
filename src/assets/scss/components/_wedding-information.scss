@@ -3,6 +3,8 @@
   flex-direction: column;
   justify-content: space-between;
   border-left: 1px dashed $light-gray;
+  background: url('../img/vines-bg.png');
+  background-size: cover;
 }
 
 .wedding-information-item {

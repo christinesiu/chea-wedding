@@ -1,4 +1,17 @@
 .contact {
   background-color: rgba($secondary-color, .2);
   margin-top: 7rem;
+  text-align: center;
+
+  p {
+    margin-bottom: .2rem;
+  }
+
+  @include breakpoint(small only){
+    margin-top:0;
+  }
+}
+
+.contact-info {
+  margin: .5rem 0 .5rem 0;
 }
