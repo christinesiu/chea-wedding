@@ -1,3 +1,17 @@
 .navbar-container, .navbar-mobile {
   z-index: 1;
+  font-family: 'averia serif libre', sans-serif;
+}
+
+.navbar-container {
+  margin-top: 1rem;
+}
+
+.navbar li a {
+  color: $white;
+  border-bottom: 0px;
+  text-transform: uppercase;
+  font-weight: lighter;
+  font-size: 14px;
+  letter-spacing: .5px;
 }
