@@ -1,0 +1,18 @@
+.rsvp-container {
+  background: url('../img/leaf-bg.jpg') no-repeat center;
+  background-size: cover;
+  height: 550px;
+  margin-top: -8rem;
+}
+
+.rsvp {
+  background-color: $white;
+  box-shadow: 0 2px 35px rgba($black, 0.15);
+  max-width: rem-calc(835);
+  margin: 0 auto;
+  margin-top: -24rem;
+  position: relative;
+  z-index: 1;
+  text-align: center;
+
+}

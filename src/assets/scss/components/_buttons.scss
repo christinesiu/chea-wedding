@@ -1,0 +1,10 @@
+.button {
+  font-family: 'averia serif libre';
+  border: 0;
+  letter-spacing: .1rem;
+  text-transform: uppercase;
+
+  &:hover {
+    background-color: $secondary-color;
+  }
+}

@@ -26,7 +26,7 @@
   background-color: $primary-color;
 }
 
-.cruise-information, .rsvp {
+.cruise-information {
   max-width: rem-calc(835);
   margin: 0 auto;
   margin-top: -20rem;
@@ -48,21 +48,4 @@
     padding: 1rem;
     margin-top: 0;
   }
-}
-
-.rsvp-container {
-  background: url('../img/leaf-bg.jpg') no-repeat center;
-  background-size: cover;
-  height: 550px;
-  margin-top: -8rem;
-}
-
-.rsvp {
-  background-color: $white;
-  box-shadow: 0 2px 35px rgba($black, 0.15);
-}
-
-.contact {
-  background-color: rgba($secondary-color, .2);
-  margin-top: 7rem;
 }
