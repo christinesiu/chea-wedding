@@ -1,10 +1,9 @@
 h1, h2 {
-  font-family: 'TheSecret';
-  line-height: 0;
+  font-family: 'Great Vibes';
 }
 
 h2 {
-  margin-top: 3rem;
+  margin-top: 1rem;
 }
 
 h5 {
@@ -22,7 +21,6 @@ body {
 .hero-header {
   color: $white;
   text-shadow: 0 2px 6px rgba(0,0,0,.2);
-  margin: 6rem 0 0 0;
 }
 
 .small-header, .subheader, .slider-name, .slider-role {
@@ -33,7 +31,7 @@ body {
   color: $white;
   text-shadow: 0 2px 6px rgba(0,0,0,.2);
   text-transform: uppercase;
-  margin: 0 0 1rem;
+  margin: -1.5rem 0 .5rem 0;
   font-size: 1.5rem;
 
   @include breakpoint(large down) {
