@@ -1,0 +1,15 @@
+// Mobile Nav Bar
+.navbar-mobile {
+  margin: 0 1rem;
+  font-family: 'Poppins', sans-serif;
+  display: flex;
+  align-items: center;
+
+  .hamburger-icon {
+    @include hamburger($white, $primary-color, 20px, 16px, 2px, 3);
+  }
+
+  span {
+    margin-left: 1rem;
+  }
+}
