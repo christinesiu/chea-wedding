@@ -20,13 +20,13 @@
       </button>
     
       <!-- Menu -->
-      <ul class="vertical menu">
-        <li><a href="#">Foundation</a></li>
-        <li><a href="#">Dot</a></li>
-        <li><a href="#">ZURB</a></li>
-        <li><a href="#">Com</a></li>
-        <li><a href="#">Slash</a></li>
-        <li><a href="#">Sites</a></li>
+      <ul class="vertical menu off-canvas-menu">
+        <li><a href="#timeline">Henry & Caroline</a></li>
+        <li><a href="#wedding-party">Wedding Party</a></li>
+        <li><a href="#need-to-know">Cruise Information</a></li>
+        <li><a href="#instructions">Reservation Instructions</a></li>
+        <li><a href="#rsvp">RSVP</a></li>
+        <li><a href="#contact">Contact</a></li>
       </ul>
     </div>
     
@@ -39,25 +39,25 @@
               <div class="column">
                 <ul class="dropdown menu navbar flex-container align-spaced" data-dropdown-menu>
                   <li>
-                    <a href="#">Henry & Caroline</a>
+                    <a href="#timeline">Henry & Caroline</a>
                   </li>
                   <li>
-                    <a href="#">Wedding Party</a>
+                    <a href="#wedding-party">Wedding Party</a>
                   </li>
                   <li>
                     <a href="#">Cruise Information</a>
                     <ul class="menu vertical">
                       <li><a href="#need-to-know">Need to Know</a></li>
-                      <li><a href="#">Itinerary</a></li>
-                      <li><a href="#">Wedding Info</a></li>
-                      <li><a href="#">Reservation Instructions</a></li>
+                      <li><a href="#itinerary">Itinerary</a></li>
+                      <li><a href="#wedding-info">Wedding Info</a></li>
+                      <li><a href="#instructions">Reservation Instructions</a></li>
                     </ul>
                   </li>
                   <li>
-                    <a href="#">RSVP</a>
+                    <a href="#rsvp">RSVP</a>
                   </li>
                   <li>
-                    <a href="#">Contact</a>
+                    <a href="#contact">Contact</a>
                   </li>
                 </ul>
               </div>
@@ -65,9 +65,9 @@
           
           </div>
           
-          <div class="navbar-mobile show-for-small-only">
-            <button type="button" class="hamburger-icon" data-toggle="offCanvas"></button>
-            <span>Menu</span>
+          <div class="navbar-mobile show-for-small-only" data-toggle="offCanvas">
+            <button type="button" class="hamburger-icon"></button>
+            <a href="#">Menu</a>
           </div>
           
           <div class="hero flex-container flex-dir-column align-center">
@@ -81,16 +81,17 @@
           <!-- hero end -->
       
           <!-- timeline -->
-          <div class="timeline section-container">
-            <div class="section-header blue">
-              <h2>Henry & Caroline</h2>
-              <hr class="hr-blue">
-            </div>
+          <div id="timeline" class="timeline section-container">
+          	<div class="section-header blue">
+          		<h2>Henry & Caroline</h2>
+          		<hr class="hr-blue">
+          	</div>
           </div>
+          
           <!-- timeline end -->
       
           <!-- wedding party -->
-          <div class="wedding-party section-container">
+          <div id="wedding-party" class="wedding-party section-container">
             <div class="section-header white">
               <h2>The Wedding Party</h2>
               <hr class="hr-white">
@@ -193,7 +194,7 @@
       
           <div class="row collapse expanded" data-equalizer data-equalize-on="medium">
             <div class="small-12 medium-6 columns">
-              <div class="itinerary" data-equalizer-watch>
+              <div id="itinerary" class="itinerary" data-equalizer-watch>
                 <div class="section-header blue">
                   <h2>Cruise Itinerary</h2>
                   <hr class="hr-blue">
@@ -259,7 +260,7 @@
               
             </div>
             <div class="small-12 medium-6 columns">
-              <div class="wedding-information" data-equalizer-watch>
+              <div id="wedding-info" class="wedding-information" data-equalizer-watch>
                 <div class="section-header blue">
                   <h2>Wedding Information</h2>
                   <hr class="hr-blue">
@@ -283,7 +284,7 @@
           </div>
           <!-- cruise-information end -->
       
-          <div class="instructions section-container border-bottom">
+          <div id="instructions" class="instructions section-container border-bottom">
             <div class="section-header blue">
               <h2>Reservation Instructions</h2>
               <hr class="hr-blue">
@@ -383,7 +384,7 @@
           <div class="rsvp-container">
           </div>
       
-          <div class="rsvp section-container">
+          <div id="rsvp" class="rsvp section-container">
             <div class="section-header blue">
               <h2>R.S.V.P.</h2>
               <hr class="hr-blue">
@@ -394,7 +395,7 @@
           <!-- rsvp end -->
       
           <!-- contact -->
-          <div class="contact section-container" id="contact-section">
+          <div class="contact section-container" id="contact">
             <div class="section-header blue">
               <h2>Contact Us</h2>
               <hr class="hr-blue">
@@ -434,5 +435,32 @@
   </div>
 
   <script src="assets/js/app.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script>
+  $(document).ready(function(){
+    // Add smooth scrolling to all links
+    $("a").on('click', function(event) {
+
+      // Make sure this.hash has a value before overriding default behavior
+      if (this.hash !== "") {
+        // Prevent default anchor click behavior
+        event.preventDefault();
+
+        // Store hash
+        var hash = this.hash;
+
+        // Using jQuery's animate() method to add smooth page scroll
+        // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+        $('html, body').animate({
+          scrollTop: $(hash).offset().top
+        }, 500, function(){
+
+          // Add hash (#) to URL when done scrolling (default click behavior)
+          window.location.hash = hash;
+        });
+      } // End if
+    });
+  });
+  </script>
 </body>
 </html>
