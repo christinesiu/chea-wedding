@@ -1,3 +1,7 @@
+body {
+  transition: .5s all;
+}
+
 .hero {
   background: $primary-color url('../img/hero-bg.png') no-repeat top center;
   background-size: cover;
@@ -7,8 +11,12 @@
   padding: .5rem;
   margin-top: -3.3rem;
 
+  @include breakpoint(770px down) {
+    margin-top: -4.2rem;
+  }
+
   @include breakpoint(small only) {
-    margin-top: -3.5rem;
+    margin-top: -4.6rem;
   }
 }
 

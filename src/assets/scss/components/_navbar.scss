@@ -4,14 +4,61 @@
 }
 
 .navbar-container {
-  margin-top: 1rem;
+  padding-top: 1rem;
+}
+
+.is-dropdown-submenu-parent {
+  background-color: rgba(255,255,255,.2);
+  padding: 0 1rem 0 .3rem;
+  width: 230px;
+  border-radius: 3px;
+  transition: .5s all;
+
+  &.is-active {
+    border-radius: 3px 3px 0 0;
+    background-color: rgba(255,255,255,.5);
+    transition: .5s all;
+
+    > a {
+      color: $primary-color;
+    }
+  }
 }
 
 .navbar li a {
   color: $white;
-  border-bottom: 0px;
+  border: 0px;
   text-transform: uppercase;
   font-weight: lighter;
   font-size: 14px;
   letter-spacing: .5px;
+
+  &:hover {
+    color: $primary-color;
+  }
+}
+
+.is-dropdown-submenu {
+  padding: .2rem 0 .5rem 0;
+  width: 230px;
+  border-radius: 0 0 3px 3px;
+
+  &.is-active {
+    transition: .5s all;
+  }
+
+  > li > a {
+    text-transform: capitalize;
+  }
+}
+
+.is-submenu-item {
+  border: 0;
+  padding-left: .3rem;
+  font-family: 'Poppins';
+  transition: .5s all;
+
+  &:hover > a {
+    padding-left: .8rem;
+  }
 }
