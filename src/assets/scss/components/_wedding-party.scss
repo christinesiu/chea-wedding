@@ -1,5 +1,7 @@
 .with-the-bride, .with-the-groom {
   text-align: center;
+  margin: 0 auto;
+  padding-top: 1rem;
 
   h5 {
     display: flex;
@@ -14,4 +16,32 @@
     color: $white;
     line-height: 0;
   }
+}
+
+.bride-slider, .groom-slider {
+  display: flex;
+  justify-content: space-between;
+}
+
+.orbit {
+  width: 100%;
+  margin-top: 1rem;
+}
+
+.slider-item {
+  img {
+    border-radius: 5rem;
+    margin-bottom: .5rem;
+  }
+}
+
+.slider-name {
+  font-size: 1.2rem;
+  color: $white;
+  margin: 0;
+}
+
+.slider-role {
+  font-size: 1rem;
+  color: rgba(255,255,255,.5);
 }
