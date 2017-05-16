@@ -6,9 +6,8 @@ var pass1 = prompt('Please Enter Your Password',' ');
 while (testV < 3) {
 if (!pass1)
 history.go(-1);
-if (pass1.toLowerCase() == "letmein") {
-alert('You Got it Right!');
-window.open('index.html');
+if (pass1.toLowerCase() == "password") {
+window.open('home.html','_self',false);
 break;
 }
 testV+=1;
