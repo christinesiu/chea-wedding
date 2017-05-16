@@ -1,6 +1,45 @@
 .navbar-container, .navbar-mobile {
   z-index: 1;
   font-family: 'averia serif libre', sans-serif;
+
+  &.is-stuck {
+    background-color: $white;
+    box-shadow: 0px 2px 6px rgba($black, .15);
+    padding-bottom: 1rem;
+
+    a {
+      color: $primary-color;
+
+      &:hover {
+        color: $secondary-color;
+      }
+    }
+
+    .is-dropdown-submenu-parent {
+      background-color: $primary-color;
+
+      &.is-active {
+        background-color: $secondary-color;
+      }
+
+      a {
+        color: $white;
+      }
+    }
+
+    .cruise-info-menu {
+      background-color: rgba($white, 1);
+      box-shadow: 0px 2px 6px rgba($black, .15);
+
+      a {
+        color: $primary-color;
+
+        &:hover {
+          color: $secondary-color;
+        }
+      }
+    }
+  }
 }
 
 .navbar-container {
@@ -8,7 +47,7 @@
 }
 
 .is-dropdown-submenu-parent {
-  background-color: rgba(255,255,255,.2);
+  background-color: rgba($white, .2);
   padding: 0 1rem 0 .3rem;
   width: 230px;
   border-radius: 3px;
@@ -16,7 +55,7 @@
 
   &.is-active {
     border-radius: 3px 3px 0 0;
-    background-color: rgba(255,255,255,.5);
+    background-color: rgba($white, .5);
     transition: .5s all;
 
     > a {
