@@ -1,0 +1,121 @@
+.timeline-container {
+  height: 100% !important;
+}
+
+.orbit-previous, .orbit-next {
+  opacity: .5;
+
+  &:hover, &:active, &:focus {
+    background-color: transparent;
+    opacity: 1;
+  }
+}
+
+.timeline-previous, .timeline-next {
+  color: $primary-color;
+}
+
+.orbit-slide {
+  margin-top: 1rem;
+}
+
+.timeline-slide {
+  width: 60%;
+  margin: 0 auto;
+
+  p {
+    margin: 0;
+  }
+}
+
+.timeline-item {
+  padding: 1.5rem 0;
+  border-bottom: 1px dashed $light-gray;
+
+  &:last-child {
+    border: 0;
+  }
+}
+
+.timeline-img-container {
+  text-align: center;
+}
+
+.timeline-img {
+  width: 200px;
+  border: 1px solid $light-gray;
+  border-radius: 50rem;
+  padding: .4rem;
+
+  @include breakpoint(small only) {
+    margin-bottom: 1rem;
+  }
+}
+
+.timeline-text {
+  @include breakpoint(small only) {
+    text-align: center;
+  }
+}
+
+.timeline {
+  .orbit-bullets {
+    button {
+      height: 15px;
+      width: 35px;
+      border-radius: 0;
+      opacity: .3;
+      transition: .5s all;
+
+      &.is-active {
+        background-color: transparent;
+        opacity: 1;
+      }
+
+      &:hover {
+        background-color: transparent;
+        opacity: 1;
+      }
+
+      &[data-slide="0"] {
+        background-image: url('../img/timeline-2010.svg');
+        background-repeat: no-repeat;
+      }
+
+      &[data-slide="1"] {
+        background-image: url('../img/timeline-2011.svg');
+        background-repeat: no-repeat;
+      }
+
+      &[data-slide="2"] {
+        background-image: url('../img/timeline-2012.svg');
+        background-repeat: no-repeat;
+      }
+
+      &[data-slide="3"] {
+        background-image: url('../img/timeline-2013.svg');
+        background-repeat: no-repeat;
+      }
+
+      &[data-slide="4"] {
+        background-image: url('../img/timeline-2014.svg');
+        background-repeat: no-repeat;
+      }
+
+      &[data-slide="5"] {
+        background-image: url('../img/timeline-2015.svg');
+        background-repeat: no-repeat;
+      }
+
+      &[data-slide="6"] {
+        background-image: url('../img/timeline-2016.svg');
+        background-repeat: no-repeat;
+      }
+
+      &[data-slide="7"] {
+        background-image: url('../img/timeline-2017.svg');
+        background-repeat: no-repeat;
+      }
+    }
+  }
+}
