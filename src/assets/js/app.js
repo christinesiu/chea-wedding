@@ -2,19 +2,19 @@ $(document).foundation();
 
 function passWord() {
 var testV = 1;
-var pass1 = prompt('Please Enter Your Password',' ');
+var pass1 = prompt('Please Enter The Password',' ');
 while (testV < 3) {
 if (!pass1)
-history.go(-1);
+history.go(0);
 if (pass1.toLowerCase() == "letmein") {
 window.open('home.html','_self',false);
 break;
 }
 testV+=1;
 var pass1 =
-prompt('Access Denied - Password Incorrect, Please Try Again.','Password');
+prompt('The password is incorrect. Please try again.','Password');
 }
 if (pass1.toLowerCase()!="password" & testV ==3)
-history.go(-1);
-return " ";
+history.go(0);
+return "index.html";
 }
