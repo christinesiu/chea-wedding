@@ -6,7 +6,7 @@ var pass1 = prompt('Please Enter The Password',' ');
 while (testV < 3) {
 if (!pass1)
 history.go(0);
-if (pass1.toLowerCase() == "letmein") {
+if (pass1.toLowerCase() == "allaboard") {
 window.open('home.html','_self',false);
 break;
 }
